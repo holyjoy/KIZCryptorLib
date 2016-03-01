@@ -23,7 +23,7 @@
 		445A31FF1C85451F00C06E5B /* file.txt in Resources */ = {isa = PBXBuildFile; fileRef = 445A31F61C85451F00C06E5B /* file.txt */; };
 		445A32001C85451F00C06E5B /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 445A31F71C85451F00C06E5B /* private_key.p12 */; };
 		445A32011C85451F00C06E5B /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = 445A31F81C85451F00C06E5B /* public_key.der */; };
-		445A32031C85452900C06E5B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 445A32021C85452900C06E5B /* README.md */; };
+		445A32051C85486100C06E5B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 445A32041C85486100C06E5B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +67,7 @@
 		445A31F61C85451F00C06E5B /* file.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
 		445A31F71C85451F00C06E5B /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.p12; sourceTree = "<group>"; };
 		445A31F81C85451F00C06E5B /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key.der; sourceTree = "<group>"; };
-		445A32021C85452900C06E5B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		445A32041C85486100C06E5B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 		445A31A41C85449400C06E5B /* KIZCryptorLib */ = {
 			isa = PBXGroup;
 			children = (
-				445A32021C85452900C06E5B /* README.md */,
+				445A32041C85486100C06E5B /* README.md */,
 				445A31E61C85451F00C06E5B /* Classess */,
 				445A31F51C85451F00C06E5B /* Files */,
 				445A31A81C85449400C06E5B /* AppDelegate.h */,
@@ -278,7 +278,7 @@
 			files = (
 				445A31AD1C85449400C06E5B /* ViewController.m in Sources */,
 				445A31FD1C85451F00C06E5B /* KIZRSASHAVerify.m in Sources */,
-				445A32031C85452900C06E5B /* README.md in Sources */,
+				445A32051C85486100C06E5B /* README.md in Sources */,
 				445A31FC1C85451F00C06E5B /* KIZRSASHASign.m in Sources */,
 				445A31FA1C85451F00C06E5B /* KIZDigestCryptor.m in Sources */,
 				445A31FE1C85451F00C06E5B /* NSData+KIZConversion.m in Sources */,
