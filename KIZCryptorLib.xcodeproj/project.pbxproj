@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		445A31A71C85449400C06E5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31A61C85449400C06E5B /* main.m */; };
+		445A31AA1C85449400C06E5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31A91C85449400C06E5B /* AppDelegate.m */; };
+		445A31AD1C85449400C06E5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31AC1C85449400C06E5B /* ViewController.m */; };
+		445A31B01C85449400C06E5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445A31AE1C85449400C06E5B /* Main.storyboard */; };
+		445A31B21C85449400C06E5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445A31B11C85449400C06E5B /* Assets.xcassets */; };
+		445A31B51C85449400C06E5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445A31B31C85449400C06E5B /* LaunchScreen.storyboard */; };
+		445A31C01C85449400C06E5B /* KIZCryptorLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31BF1C85449400C06E5B /* KIZCryptorLibTests.m */; };
+		445A31F91C85451F00C06E5B /* KIZCryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31E91C85451F00C06E5B /* KIZCryptUtil.m */; };
+		445A31FA1C85451F00C06E5B /* KIZDigestCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31EB1C85451F00C06E5B /* KIZDigestCryptor.m */; };
+		445A31FB1C85451F00C06E5B /* KIZRSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31EE1C85451F00C06E5B /* KIZRSACryptor.m */; };
+		445A31FC1C85451F00C06E5B /* KIZRSASHASign.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31F01C85451F00C06E5B /* KIZRSASHASign.m */; };
+		445A31FD1C85451F00C06E5B /* KIZRSASHAVerify.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31F21C85451F00C06E5B /* KIZRSASHAVerify.m */; };
+		445A31FE1C85451F00C06E5B /* NSData+KIZConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31F41C85451F00C06E5B /* NSData+KIZConversion.m */; };
+		445A31FF1C85451F00C06E5B /* file.txt in Resources */ = {isa = PBXBuildFile; fileRef = 445A31F61C85451F00C06E5B /* file.txt */; };
+		445A32001C85451F00C06E5B /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 445A31F71C85451F00C06E5B /* private_key.p12 */; };
+		445A32011C85451F00C06E5B /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = 445A31F81C85451F00C06E5B /* public_key.der */; };
+		445A32031C85452900C06E5B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 445A32021C85452900C06E5B /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		445A31BC1C85449400C06E5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 445A319A1C85449400C06E5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 445A31A11C85449400C06E5B;
+			remoteInfo = KIZCryptorLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		445A31A21C85449400C06E5B /* KIZCryptorLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIZCryptorLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		445A31A61C85449400C06E5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		445A31A81C85449400C06E5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		445A31A91C85449400C06E5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		445A31AB1C85449400C06E5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		445A31AC1C85449400C06E5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		445A31AF1C85449400C06E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		445A31B11C85449400C06E5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		445A31B41C85449400C06E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		445A31B61C85449400C06E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445A31BB1C85449400C06E5B /* KIZCryptorLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIZCryptorLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		445A31BF1C85449400C06E5B /* KIZCryptorLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIZCryptorLibTests.m; sourceTree = "<group>"; };
+		445A31C11C85449400C06E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445A31E71C85451F00C06E5B /* KIZCryptoKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZCryptoKit.h; sourceTree = "<group>"; };
+		445A31E81C85451F00C06E5B /* KIZCryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZCryptUtil.h; sourceTree = "<group>"; };
+		445A31E91C85451F00C06E5B /* KIZCryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZCryptUtil.m; sourceTree = "<group>"; };
+		445A31EA1C85451F00C06E5B /* KIZDigestCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZDigestCryptor.h; sourceTree = "<group>"; };
+		445A31EB1C85451F00C06E5B /* KIZDigestCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZDigestCryptor.m; sourceTree = "<group>"; };
+		445A31EC1C85451F00C06E5B /* KIZRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZRSA.h; sourceTree = "<group>"; };
+		445A31ED1C85451F00C06E5B /* KIZRSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZRSACryptor.h; sourceTree = "<group>"; };
+		445A31EE1C85451F00C06E5B /* KIZRSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZRSACryptor.m; sourceTree = "<group>"; };
+		445A31EF1C85451F00C06E5B /* KIZRSASHASign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZRSASHASign.h; sourceTree = "<group>"; };
+		445A31F01C85451F00C06E5B /* KIZRSASHASign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZRSASHASign.m; sourceTree = "<group>"; };
+		445A31F11C85451F00C06E5B /* KIZRSASHAVerify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZRSASHAVerify.h; sourceTree = "<group>"; };
+		445A31F21C85451F00C06E5B /* KIZRSASHAVerify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZRSASHAVerify.m; sourceTree = "<group>"; };
+		445A31F31C85451F00C06E5B /* NSData+KIZConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+KIZConversion.h"; sourceTree = "<group>"; };
+		445A31F41C85451F00C06E5B /* NSData+KIZConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+KIZConversion.m"; sourceTree = "<group>"; };
+		445A31F61C85451F00C06E5B /* file.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
+		445A31F71C85451F00C06E5B /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.p12; sourceTree = "<group>"; };
+		445A31F81C85451F00C06E5B /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key.der; sourceTree = "<group>"; };
+		445A32021C85452900C06E5B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		445A319F1C85449400C06E5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A31B81C85449400C06E5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		445A31991C85449400C06E5B = {
+			isa = PBXGroup;
+			children = (
+				445A31A41C85449400C06E5B /* KIZCryptorLib */,
+				445A31BE1C85449400C06E5B /* KIZCryptorLibTests */,
+				445A31A31C85449400C06E5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		445A31A31C85449400C06E5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				445A31A21C85449400C06E5B /* KIZCryptorLib.app */,
+				445A31BB1C85449400C06E5B /* KIZCryptorLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		445A31A41C85449400C06E5B /* KIZCryptorLib */ = {
+			isa = PBXGroup;
+			children = (
+				445A32021C85452900C06E5B /* README.md */,
+				445A31E61C85451F00C06E5B /* Classess */,
+				445A31F51C85451F00C06E5B /* Files */,
+				445A31A81C85449400C06E5B /* AppDelegate.h */,
+				445A31A91C85449400C06E5B /* AppDelegate.m */,
+				445A31AB1C85449400C06E5B /* ViewController.h */,
+				445A31AC1C85449400C06E5B /* ViewController.m */,
+				445A31AE1C85449400C06E5B /* Main.storyboard */,
+				445A31B11C85449400C06E5B /* Assets.xcassets */,
+				445A31B31C85449400C06E5B /* LaunchScreen.storyboard */,
+				445A31B61C85449400C06E5B /* Info.plist */,
+				445A31A51C85449400C06E5B /* Supporting Files */,
+			);
+			path = KIZCryptorLib;
+			sourceTree = "<group>";
+		};
+		445A31A51C85449400C06E5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				445A31A61C85449400C06E5B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		445A31BE1C85449400C06E5B /* KIZCryptorLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				445A31BF1C85449400C06E5B /* KIZCryptorLibTests.m */,
+				445A31C11C85449400C06E5B /* Info.plist */,
+			);
+			path = KIZCryptorLibTests;
+			sourceTree = "<group>";
+		};
+		445A31E61C85451F00C06E5B /* Classess */ = {
+			isa = PBXGroup;
+			children = (
+				445A31E71C85451F00C06E5B /* KIZCryptoKit.h */,
+				445A31E81C85451F00C06E5B /* KIZCryptUtil.h */,
+				445A31E91C85451F00C06E5B /* KIZCryptUtil.m */,
+				445A31EA1C85451F00C06E5B /* KIZDigestCryptor.h */,
+				445A31EB1C85451F00C06E5B /* KIZDigestCryptor.m */,
+				445A31EC1C85451F00C06E5B /* KIZRSA.h */,
+				445A31ED1C85451F00C06E5B /* KIZRSACryptor.h */,
+				445A31EE1C85451F00C06E5B /* KIZRSACryptor.m */,
+				445A31EF1C85451F00C06E5B /* KIZRSASHASign.h */,
+				445A31F01C85451F00C06E5B /* KIZRSASHASign.m */,
+				445A31F11C85451F00C06E5B /* KIZRSASHAVerify.h */,
+				445A31F21C85451F00C06E5B /* KIZRSASHAVerify.m */,
+				445A31F31C85451F00C06E5B /* NSData+KIZConversion.h */,
+				445A31F41C85451F00C06E5B /* NSData+KIZConversion.m */,
+			);
+			path = Classess;
+			sourceTree = "<group>";
+		};
+		445A31F51C85451F00C06E5B /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				445A31F61C85451F00C06E5B /* file.txt */,
+				445A31F71C85451F00C06E5B /* private_key.p12 */,
+				445A31F81C85451F00C06E5B /* public_key.der */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		445A31A11C85449400C06E5B /* KIZCryptorLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 445A31C41C85449400C06E5B /* Build configuration list for PBXNativeTarget "KIZCryptorLib" */;
+			buildPhases = (
+				445A319E1C85449400C06E5B /* Sources */,
+				445A319F1C85449400C06E5B /* Frameworks */,
+				445A31A01C85449400C06E5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KIZCryptorLib;
+			productName = KIZCryptorLib;
+			productReference = 445A31A21C85449400C06E5B /* KIZCryptorLib.app */;
+			productType = "com.apple.product-type.application";
+		};
+		445A31BA1C85449400C06E5B /* KIZCryptorLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 445A31C71C85449400C06E5B /* Build configuration list for PBXNativeTarget "KIZCryptorLibTests" */;
+			buildPhases = (
+				445A31B71C85449400C06E5B /* Sources */,
+				445A31B81C85449400C06E5B /* Frameworks */,
+				445A31B91C85449400C06E5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				445A31BD1C85449400C06E5B /* PBXTargetDependency */,
+			);
+			name = KIZCryptorLibTests;
+			productName = KIZCryptorLibTests;
+			productReference = 445A31BB1C85449400C06E5B /* KIZCryptorLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		445A319A1C85449400C06E5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = kingizz;
+				TargetAttributes = {
+					445A31A11C85449400C06E5B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					445A31BA1C85449400C06E5B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 445A31A11C85449400C06E5B;
+					};
+				};
+			};
+			buildConfigurationList = 445A319D1C85449400C06E5B /* Build configuration list for PBXProject "KIZCryptorLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 445A31991C85449400C06E5B;
+			productRefGroup = 445A31A31C85449400C06E5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				445A31A11C85449400C06E5B /* KIZCryptorLib */,
+				445A31BA1C85449400C06E5B /* KIZCryptorLibTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		445A31A01C85449400C06E5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445A31B51C85449400C06E5B /* LaunchScreen.storyboard in Resources */,
+				445A31B21C85449400C06E5B /* Assets.xcassets in Resources */,
+				445A32011C85451F00C06E5B /* public_key.der in Resources */,
+				445A31FF1C85451F00C06E5B /* file.txt in Resources */,
+				445A32001C85451F00C06E5B /* private_key.p12 in Resources */,
+				445A31B01C85449400C06E5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A31B91C85449400C06E5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		445A319E1C85449400C06E5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445A31AD1C85449400C06E5B /* ViewController.m in Sources */,
+				445A31FD1C85451F00C06E5B /* KIZRSASHAVerify.m in Sources */,
+				445A32031C85452900C06E5B /* README.md in Sources */,
+				445A31FC1C85451F00C06E5B /* KIZRSASHASign.m in Sources */,
+				445A31FA1C85451F00C06E5B /* KIZDigestCryptor.m in Sources */,
+				445A31FE1C85451F00C06E5B /* NSData+KIZConversion.m in Sources */,
+				445A31AA1C85449400C06E5B /* AppDelegate.m in Sources */,
+				445A31A71C85449400C06E5B /* main.m in Sources */,
+				445A31F91C85451F00C06E5B /* KIZCryptUtil.m in Sources */,
+				445A31FB1C85451F00C06E5B /* KIZRSACryptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		445A31B71C85449400C06E5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445A31C01C85449400C06E5B /* KIZCryptorLibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		445A31BD1C85449400C06E5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 445A31A11C85449400C06E5B /* KIZCryptorLib */;
+			targetProxy = 445A31BC1C85449400C06E5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		445A31AE1C85449400C06E5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				445A31AF1C85449400C06E5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		445A31B31C85449400C06E5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				445A31B41C85449400C06E5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		445A31C21C85449400C06E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		445A31C31C85449400C06E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		445A31C51C85449400C06E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KIZCryptorLib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingizz.KIZCryptorLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		445A31C61C85449400C06E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KIZCryptorLib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingizz.KIZCryptorLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		445A31C81C85449400C06E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KIZCryptorLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingizz.KIZCryptorLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KIZCryptorLib.app/KIZCryptorLib";
+			};
+			name = Debug;
+		};
+		445A31C91C85449400C06E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KIZCryptorLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingizz.KIZCryptorLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KIZCryptorLib.app/KIZCryptorLib";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		445A319D1C85449400C06E5B /* Build configuration list for PBXProject "KIZCryptorLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445A31C21C85449400C06E5B /* Debug */,
+				445A31C31C85449400C06E5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		445A31C41C85449400C06E5B /* Build configuration list for PBXNativeTarget "KIZCryptorLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445A31C51C85449400C06E5B /* Debug */,
+				445A31C61C85449400C06E5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		445A31C71C85449400C06E5B /* Build configuration list for PBXNativeTarget "KIZCryptorLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445A31C81C85449400C06E5B /* Debug */,
+				445A31C91C85449400C06E5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 445A319A1C85449400C06E5B /* Project object */;
+}
