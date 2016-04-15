@@ -121,4 +121,67 @@
     return [[NSData alloc] initWithBytes:digest length:sizeof(digest)];
 }
 
+
+#pragma mark-
+
++ (NSString *)digestString:(NSString *)string withAlgorithm:(KIZDigestAlgorithm)digest{
+    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *digestedData = [KIZDigestCryptor digestData:data withAlgorithm:digest];
+    
+    return [digestedData kiz_toHexadecimalString];
+
+}
++ (NSData   *)digestData:(NSData *)data withAlgorithm:(KIZDigestAlgorithm)digestAlgorithm{
+    
+    if (data.length == 0) {
+        return nil;
+    }
+    
+    NSInteger digestLength;
+    
+    unsigned char *(*MAKE_DIGEST)(const void *data, CC_LONG len, unsigned char *md);
+    
+    switch (digestAlgorithm) {
+        case KIZDigestMD5: {
+            digestLength = CC_MD5_DIGEST_LENGTH;
+            MAKE_DIGEST = &CC_MD5;
+            break;
+        }
+        case KIZDigestSHA1: {
+            digestLength = CC_SHA1_DIGEST_LENGTH;
+            MAKE_DIGEST = &CC_SHA1;
+            break;
+        }
+        case KIZDigestSHA224: {
+            digestLength = CC_SHA224_DIGEST_LENGTH;
+            MAKE_DIGEST = &CC_SHA224;
+            break;
+        }
+        case KIZDigestSHA256: {
+            digestLength = CC_SHA256_DIGEST_LENGTH;
+            MAKE_DIGEST = &CC_SHA256;
+            break;
+        }
+        case KIZDigestSHA384: {
+            digestLength = CC_SHA384_DIGEST_LENGTH;
+            MAKE_DIGEST = &CC_SHA384;
+            break;
+        }
+        case KIZDigestSHA512: {
+            digestLength = CC_SHA512_DIGEST_LENGTH;
+            MAKE_DIGEST = &CC_SHA512;
+            break;
+        }
+    }
+    
+    uint8_t     digest[digestLength];
+    
+    // You can ignore the result CC_MD5 because it never fails.
+    (void) MAKE_DIGEST([data bytes], (CC_LONG) [data length], digest);
+    
+    return [[NSData alloc] initWithBytes:digest length:sizeof(digest)];
+    
+}
+
+
 @end

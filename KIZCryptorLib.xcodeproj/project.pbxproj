@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18FCF7451CC0D0E400C41584 /* NSData+KIZDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCF7441CC0D0E400C41584 /* NSData+KIZDigest.m */; };
+		18FCF7481CC0D0FB00C41584 /* NSString+KIZDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCF7471CC0D0FB00C41584 /* NSString+KIZDigest.m */; };
 		445A31A71C85449400C06E5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31A61C85449400C06E5B /* main.m */; };
 		445A31AA1C85449400C06E5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31A91C85449400C06E5B /* AppDelegate.m */; };
 		445A31AD1C85449400C06E5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31AC1C85449400C06E5B /* ViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18FCF7431CC0D0E400C41584 /* NSData+KIZDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+KIZDigest.h"; sourceTree = "<group>"; };
+		18FCF7441CC0D0E400C41584 /* NSData+KIZDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+KIZDigest.m"; sourceTree = "<group>"; };
+		18FCF7461CC0D0FB00C41584 /* NSString+KIZDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KIZDigest.h"; sourceTree = "<group>"; };
+		18FCF7471CC0D0FB00C41584 /* NSString+KIZDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KIZDigest.m"; sourceTree = "<group>"; };
 		445A31A21C85449400C06E5B /* KIZCryptorLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIZCryptorLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		445A31A61C85449400C06E5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		445A31A81C85449400C06E5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,6 +165,10 @@
 				445A31F21C85451F00C06E5B /* KIZRSASHAVerify.m */,
 				445A31F31C85451F00C06E5B /* NSData+KIZConversion.h */,
 				445A31F41C85451F00C06E5B /* NSData+KIZConversion.m */,
+				18FCF7431CC0D0E400C41584 /* NSData+KIZDigest.h */,
+				18FCF7441CC0D0E400C41584 /* NSData+KIZDigest.m */,
+				18FCF7461CC0D0FB00C41584 /* NSString+KIZDigest.h */,
+				18FCF7471CC0D0FB00C41584 /* NSString+KIZDigest.m */,
 			);
 			path = Classess;
 			sourceTree = "<group>";
@@ -280,9 +290,11 @@
 				445A31FD1C85451F00C06E5B /* KIZRSASHAVerify.m in Sources */,
 				445A32051C85486100C06E5B /* README.md in Sources */,
 				445A31FC1C85451F00C06E5B /* KIZRSASHASign.m in Sources */,
+				18FCF7481CC0D0FB00C41584 /* NSString+KIZDigest.m in Sources */,
 				445A31FA1C85451F00C06E5B /* KIZDigestCryptor.m in Sources */,
 				445A31FE1C85451F00C06E5B /* NSData+KIZConversion.m in Sources */,
 				445A31AA1C85449400C06E5B /* AppDelegate.m in Sources */,
+				18FCF7451CC0D0E400C41584 /* NSData+KIZDigest.m in Sources */,
 				445A31A71C85449400C06E5B /* main.m in Sources */,
 				445A31F91C85451F00C06E5B /* KIZCryptUtil.m in Sources */,
 				445A31FB1C85451F00C06E5B /* KIZRSACryptor.m in Sources */,
@@ -472,6 +484,7 @@
 				445A31C61C85449400C06E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		445A31C71C85449400C06E5B /* Build configuration list for PBXNativeTarget "KIZCryptorLibTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +493,7 @@
 				445A31C91C85449400C06E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

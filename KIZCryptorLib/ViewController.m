@@ -53,7 +53,7 @@
     NSLog(@"文件的md5 : %@", md5String);
     
     
-    NSString *md5 = [KIZDigestCryptor md5DigestOfString:string];
+    NSString *md5 = [KIZDigestCryptor digestString:string withAlgorithm:KIZDigestMD5];//[KIZDigestCryptor md5DigestOfString:string];
     NSLog(@"字符串%@的md5-->%@", string, md5);
     
     

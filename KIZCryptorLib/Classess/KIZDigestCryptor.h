@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSUInteger, KIZDigestAlgorithm) {
+    KIZDigestMD5,
+    KIZDigestSHA1,
+    KIZDigestSHA224,
+    KIZDigestSHA256,
+    KIZDigestSHA384,
+    KIZDigestSHA512
+};
+
 @interface KIZDigestCryptor : NSObject
 
 #pragma mark- MD5
@@ -19,5 +28,10 @@
 + (NSString *)sha1DigestOfString:(NSString *)string;
 + (NSData   *)sha1DigestOfData:(NSData *)data;
 + (NSString *)sha1DigestOfFileAtPath:(NSString *)filePath;
+
+#pragma mark-
+
++ (NSString *)digestString:(NSString *)string withAlgorithm:(KIZDigestAlgorithm)digest;
++ (NSData   *)digestData:(NSData *)data withAlgorithm:(KIZDigestAlgorithm)digest;
 
 @end
