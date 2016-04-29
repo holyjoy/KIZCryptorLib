@@ -31,7 +31,7 @@ KIZRSASHASign   *rsaSign    = [[KIZRSASHASign alloc] initWithPrivateKey:privateK
 KIZRSASHAVerify *rsaVerify  = [[KIZRSASHAVerify alloc] initWithPublicKey:publickKey];
 
 NSData *plainData = [string dataUsingEncoding:NSUTF8StringEncoding];
-NSData *signedData = [rsaSign signData:plainData WithDigest:KIZRSASignSHA1];
+NSData *signedData = [rsaSign signData:plainData WithDigest:KIZRSASignSHA1]; 
 BOOL valid = [rsaVerify verifyPlainData:plainData signatureData:signedData withDigest:KIZRSASignSHA1];
 ```
 
