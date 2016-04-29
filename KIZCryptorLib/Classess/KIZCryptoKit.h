@@ -11,8 +11,9 @@
 
 #import "KIZRSACryptor.h"
 #import "KIZCryptUtil.h"
-#import "KIZRSASHASign.h"
-#import "KIZRSASHAVerify.h"
-#import "KIZDigestCryptor.h"
+#import "KIZRSASign.h"
+#import "KIZRSAVerify.h"
+#import "NSData+KIZDigest.h"
+#import "NSString+KIZDigest.h"
 
 #endif /* KIZCryptoKit_h */

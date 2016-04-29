@@ -9,7 +9,12 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSUInteger, KIZRSASignDigest) {
-    KIZRSASHASignSHA1,      //the default
-    KIZRSASHASignSHA256,
-    KIZRSASHASignSHA512
+    
+    KIZRSASignSHA1,      //the default
+    KIZRSASignSHA224,
+    KIZRSASignSHA256,
+    KIZRSASignSHA384,
+    KIZRSASignSHA512,
+    KIZRSASignMD2,
+    KIZRSASignMD5,
 };

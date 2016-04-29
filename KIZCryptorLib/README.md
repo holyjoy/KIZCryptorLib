@@ -31,8 +31,8 @@ KIZRSASHASign   *rsaSign    = [[KIZRSASHASign alloc] initWithPrivateKey:privateK
 KIZRSASHAVerify *rsaVerify  = [[KIZRSASHAVerify alloc] initWithPublicKey:publickKey];
 
 NSData *plainData = [string dataUsingEncoding:NSUTF8StringEncoding];
-NSData *signedData = [rsaSign signData:plainData WithDigest:KIZRSASHASignSHA1];
-BOOL valid = [rsaVerify verifyPlainData:plainData signatureData:signedData withDigest:KIZRSASHASignSHA1];
+NSData *signedData = [rsaSign signData:plainData WithDigest:KIZRSASignSHA1];
+BOOL valid = [rsaVerify verifyPlainData:plainData signatureData:signedData withDigest:KIZRSASignSHA1];
 ```
 
 MD5 digest:
@@ -40,11 +40,11 @@ MD5 digest:
 ```
 //file md5
 NSString *path = [[NSBundle mainBundle] pathForResource:@"file" ofType:@"txt"];
-NSString *md5String = [KIZDigestCryptor md5DigestOfFileAtPath:path];
+NSString *md5String = [NSString kiz_md5StringWithContentOfFile:path];
 NSLog(@"file md5 : %@", md5String);
 
 //string's md5
-NSString *md5 = [KIZDigestCryptor md5DigestOfString:@"hello, kingizz!"];
+NSString *md5 = [string kiz_md5String];
 NSLog(@"string %@'s md5-->%@", string, md5);
 ```
 
@@ -52,11 +52,11 @@ SHA1:
 
 ```
 //file SHA1
-NSString *sha1String = [KIZDigestCryptor sha1DigestOfFileAtPath:path];
+NSString *sha1String = [NSString kiz_sha1StringWithContentOfFile:path];
 NSLog(@"file's SHA1 : %@", sha1String);
 
 //String's SHA1
-NSLog(@"string %@'s sha1：%@", string, [KIZDigestCryptor sha1DigestOfString:string]);
+NSLog(@"string %@'s sha1：%@", string, [string kiz_sha1String]);
 
 ```
 

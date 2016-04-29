@@ -38,29 +38,29 @@
     
     
     //RSA 私钥签名， 公钥验证签名
-    KIZRSASHASign   *rsaSign    = [[KIZRSASHASign alloc] initWithPrivateKey:privateKey];
-    KIZRSASHAVerify *rsaVerify  = [[KIZRSASHAVerify alloc] initWithPublicKey:publickKey];
+    KIZRSASign   *rsaSign    = [[KIZRSASign alloc] initWithPrivateKey:privateKey];
+    KIZRSAVerify *rsaVerify  = [[KIZRSAVerify alloc] initWithPublicKey:publickKey];
     
     NSData *plainData = [string dataUsingEncoding:NSUTF8StringEncoding];
-    NSData *signedData = [rsaSign signData:plainData WithDigest:KIZRSASHASignSHA1];
-    BOOL valid = [rsaVerify verifyPlainData:plainData signatureData:signedData withDigest:KIZRSASHASignSHA1];
+    NSData *signedData = [rsaSign signData:plainData WithDigest:KIZRSASignSHA1];
+    BOOL valid = [rsaVerify verifyPlainData:plainData signatureData:signedData withDigest:KIZRSASignSHA1];
     NSLog(@"RSA签名验证：%@", valid ? @"valid" : @"invalid");
     
     
     //散列算法
     NSString *path = [[NSBundle mainBundle] pathForResource:@"file" ofType:@"txt"];
-    NSString *md5String = [KIZDigestCryptor md5DigestOfFileAtPath:path];
+    NSString *md5String = [NSString kiz_md5StringWithContentOfFile:path];
     NSLog(@"文件的md5 : %@", md5String);
     
     
-    NSString *md5 = [KIZDigestCryptor digestString:string withAlgorithm:KIZDigestMD5];//[KIZDigestCryptor md5DigestOfString:string];
+    NSString *md5 = [string kiz_md5String];
     NSLog(@"字符串%@的md5-->%@", string, md5);
     
     
-    NSString *sha1String = [KIZDigestCryptor sha1DigestOfFileAtPath:path];
+    NSString *sha1String = [NSString kiz_sha1StringWithContentOfFile:path];
     NSLog(@"文件的SHA1 : %@", sha1String);
     
-    NSLog(@"字符串%@的sha1：%@", string, [KIZDigestCryptor sha1DigestOfString:string]);
+    NSLog(@"字符串%@的sha1：%@", string, [string kiz_sha1String]);
     
     
     

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "KIZRSA.h"
 
-@interface KIZRSASHAVerify : NSObject
+@interface KIZRSAVerify : NSObject
 
 @property (nonatomic, assign, readonly) SecKeyRef publicKey;
 

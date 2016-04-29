@@ -2,7 +2,7 @@
 //  NSData+KIZDigest.m
 //  KIZCryptorLib
 //
-//  Created by apple on 16/4/15.
+//  Created by kingizz on 16/4/15.
 //  Copyright © 2016年 kingizz. All rights reserved.
 //
 

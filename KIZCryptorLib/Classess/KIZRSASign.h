@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "KIZRSA.h"
 
-@interface KIZRSASHASign : NSObject
+@interface KIZRSASign : NSObject
 
 @property (nonatomic, assign, readonly) SecKeyRef privateKey;
 

@@ -17,10 +17,9 @@
 		445A31B51C85449400C06E5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445A31B31C85449400C06E5B /* LaunchScreen.storyboard */; };
 		445A31C01C85449400C06E5B /* KIZCryptorLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31BF1C85449400C06E5B /* KIZCryptorLibTests.m */; };
 		445A31F91C85451F00C06E5B /* KIZCryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31E91C85451F00C06E5B /* KIZCryptUtil.m */; };
-		445A31FA1C85451F00C06E5B /* KIZDigestCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31EB1C85451F00C06E5B /* KIZDigestCryptor.m */; };
 		445A31FB1C85451F00C06E5B /* KIZRSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31EE1C85451F00C06E5B /* KIZRSACryptor.m */; };
-		445A31FC1C85451F00C06E5B /* KIZRSASHASign.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31F01C85451F00C06E5B /* KIZRSASHASign.m */; };
-		445A31FD1C85451F00C06E5B /* KIZRSASHAVerify.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31F21C85451F00C06E5B /* KIZRSASHAVerify.m */; };
+		445A31FC1C85451F00C06E5B /* KIZRSASign.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31F01C85451F00C06E5B /* KIZRSASign.m */; };
+		445A31FD1C85451F00C06E5B /* KIZRSAVerify.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31F21C85451F00C06E5B /* KIZRSAVerify.m */; };
 		445A31FE1C85451F00C06E5B /* NSData+KIZConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 445A31F41C85451F00C06E5B /* NSData+KIZConversion.m */; };
 		445A31FF1C85451F00C06E5B /* file.txt in Resources */ = {isa = PBXBuildFile; fileRef = 445A31F61C85451F00C06E5B /* file.txt */; };
 		445A32001C85451F00C06E5B /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 445A31F71C85451F00C06E5B /* private_key.p12 */; };
@@ -59,15 +58,13 @@
 		445A31E71C85451F00C06E5B /* KIZCryptoKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZCryptoKit.h; sourceTree = "<group>"; };
 		445A31E81C85451F00C06E5B /* KIZCryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZCryptUtil.h; sourceTree = "<group>"; };
 		445A31E91C85451F00C06E5B /* KIZCryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZCryptUtil.m; sourceTree = "<group>"; };
-		445A31EA1C85451F00C06E5B /* KIZDigestCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZDigestCryptor.h; sourceTree = "<group>"; };
-		445A31EB1C85451F00C06E5B /* KIZDigestCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZDigestCryptor.m; sourceTree = "<group>"; };
 		445A31EC1C85451F00C06E5B /* KIZRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZRSA.h; sourceTree = "<group>"; };
 		445A31ED1C85451F00C06E5B /* KIZRSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZRSACryptor.h; sourceTree = "<group>"; };
 		445A31EE1C85451F00C06E5B /* KIZRSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZRSACryptor.m; sourceTree = "<group>"; };
-		445A31EF1C85451F00C06E5B /* KIZRSASHASign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZRSASHASign.h; sourceTree = "<group>"; };
-		445A31F01C85451F00C06E5B /* KIZRSASHASign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZRSASHASign.m; sourceTree = "<group>"; };
-		445A31F11C85451F00C06E5B /* KIZRSASHAVerify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZRSASHAVerify.h; sourceTree = "<group>"; };
-		445A31F21C85451F00C06E5B /* KIZRSASHAVerify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZRSASHAVerify.m; sourceTree = "<group>"; };
+		445A31EF1C85451F00C06E5B /* KIZRSASign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZRSASign.h; sourceTree = "<group>"; };
+		445A31F01C85451F00C06E5B /* KIZRSASign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZRSASign.m; sourceTree = "<group>"; };
+		445A31F11C85451F00C06E5B /* KIZRSAVerify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIZRSAVerify.h; sourceTree = "<group>"; };
+		445A31F21C85451F00C06E5B /* KIZRSAVerify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIZRSAVerify.m; sourceTree = "<group>"; };
 		445A31F31C85451F00C06E5B /* NSData+KIZConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+KIZConversion.h"; sourceTree = "<group>"; };
 		445A31F41C85451F00C06E5B /* NSData+KIZConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+KIZConversion.m"; sourceTree = "<group>"; };
 		445A31F61C85451F00C06E5B /* file.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
@@ -154,15 +151,13 @@
 				445A31E71C85451F00C06E5B /* KIZCryptoKit.h */,
 				445A31E81C85451F00C06E5B /* KIZCryptUtil.h */,
 				445A31E91C85451F00C06E5B /* KIZCryptUtil.m */,
-				445A31EA1C85451F00C06E5B /* KIZDigestCryptor.h */,
-				445A31EB1C85451F00C06E5B /* KIZDigestCryptor.m */,
 				445A31EC1C85451F00C06E5B /* KIZRSA.h */,
 				445A31ED1C85451F00C06E5B /* KIZRSACryptor.h */,
 				445A31EE1C85451F00C06E5B /* KIZRSACryptor.m */,
-				445A31EF1C85451F00C06E5B /* KIZRSASHASign.h */,
-				445A31F01C85451F00C06E5B /* KIZRSASHASign.m */,
-				445A31F11C85451F00C06E5B /* KIZRSASHAVerify.h */,
-				445A31F21C85451F00C06E5B /* KIZRSASHAVerify.m */,
+				445A31EF1C85451F00C06E5B /* KIZRSASign.h */,
+				445A31F01C85451F00C06E5B /* KIZRSASign.m */,
+				445A31F11C85451F00C06E5B /* KIZRSAVerify.h */,
+				445A31F21C85451F00C06E5B /* KIZRSAVerify.m */,
 				445A31F31C85451F00C06E5B /* NSData+KIZConversion.h */,
 				445A31F41C85451F00C06E5B /* NSData+KIZConversion.m */,
 				18FCF7431CC0D0E400C41584 /* NSData+KIZDigest.h */,
@@ -287,11 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				445A31AD1C85449400C06E5B /* ViewController.m in Sources */,
-				445A31FD1C85451F00C06E5B /* KIZRSASHAVerify.m in Sources */,
+				445A31FD1C85451F00C06E5B /* KIZRSAVerify.m in Sources */,
 				445A32051C85486100C06E5B /* README.md in Sources */,
-				445A31FC1C85451F00C06E5B /* KIZRSASHASign.m in Sources */,
+				445A31FC1C85451F00C06E5B /* KIZRSASign.m in Sources */,
 				18FCF7481CC0D0FB00C41584 /* NSString+KIZDigest.m in Sources */,
-				445A31FA1C85451F00C06E5B /* KIZDigestCryptor.m in Sources */,
 				445A31FE1C85451F00C06E5B /* NSData+KIZConversion.m in Sources */,
 				445A31AA1C85449400C06E5B /* AppDelegate.m in Sources */,
 				18FCF7451CC0D0E400C41584 /* NSData+KIZDigest.m in Sources */,

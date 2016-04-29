@@ -10,6 +10,7 @@
 
 @interface NSData (KIZConversion)
 
+/* Returns hexadecimal string of NSData. Empty string if data is empty.   */
 - (NSString *)kiz_toHexadecimalString;
 
 @end

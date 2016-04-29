@@ -11,7 +11,6 @@
 @implementation NSData (KIZConversion)
 
 - (NSString *)kiz_toHexadecimalString {
-    /* Returns hexadecimal string of NSData. Empty string if data is empty.   */
     
     const unsigned char *dataBuffer = (const unsigned char *)[self bytes];
     
